@@ -1,0 +1,360 @@
+@media screen and (min-width: 500px) { 
+    .bground {display: none;}
+    .mobile-nav {display: none; }
+}
+
+/* mobile navbar active */
+@media screen and (max-width: 499px) { 
+    .nav-desk {display: none;} 
+
+    .mobile-nav {
+        position: absolute;
+        -webkit-transform: translate(-100%, 0);
+        transform: translate(-100%, 0);
+        transition: transform 0.5 ease;
+        width: 100%;
+        background-color: #05768a;
+        z-index: 10;
+    }
+
+    .open {
+        -webkit-transform: translate(0, 0);
+        transform: translate(0, 0);
+    }
+
+    .mob-menu {
+        display: list-item;
+        text-align: start;
+        color: #343f56 !important;
+        width: 100%;
+    }
+
+    /* UI Detail */
+    .detail-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        padding: 16px; /* Lebih kecil untuk layar kecil */
+      }
+    
+      .pic-detail {
+        width: 100%;
+        max-width: 600px; /* Sesuaikan dengan lebar kontainer */
+        border-radius: 12px;
+        margin-bottom: 16px;
+      }
+    
+      .info-detail {
+        width: 100%;
+        text-align: left;
+      }
+    
+      .info-name {
+        font-size: 20px; /* Lebih kecil untuk layar kecil */
+        font-weight: bold;
+        margin-bottom: 16px;
+        text-align: center;
+      }
+    
+      .desc-part,
+      .review-resto,
+      label {
+        width: 100%;
+        padding: 12px; /* Lebih kecil agar proporsional */
+        margin-top: 16px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+}
+
+/* mobile screen */
+@media screen and (min-width: 650px) {
+    .list-catalog {
+        padding: 16px 32px 32px 32px;
+    }
+
+    .title-catalog {
+        font-size: 18px;
+    }
+
+    .desc-catalog {font-size: 14px;}
+
+    .brand-name h3 {
+        margin-left: 15px;
+        font-size: 25px;
+        order: 2;
+      }
+      
+      .brand-name img{
+        order: 1;
+        margin: 25px 0 0 25px;
+        width: 60px;
+        height: auto;
+      }
+
+      /* Detail UI */
+      .detail-list {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 16px;
+        padding: 24px;
+      }
+    
+      .pic-detail {
+        width: 100%;
+        max-width: 600px; /* Sesuaikan dengan lebar kontainer */
+        border-radius: 12px;
+        margin-bottom: 16px;
+      }
+    
+      .info-detail {
+        width: 100%;
+        text-align: left;
+      }
+    
+      .info-name {
+        font-size: 24px;
+        font-weight: bold;
+        margin-bottom: 16px;
+        text-align: center;
+      }
+    
+      .desc-part,
+      .review-resto,
+      label {
+        width: 100%;
+        padding: 16px;
+        margin-top: 16px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+
+      /* Responsive hero mobile */
+      .hero {
+        background:url('../public/images/heros/hero-image_2.jpg');
+      } 
+}
+
+@media screen and (min-width:700px) {
+    .catalog {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-column-gap: 10px;
+        grid-row-gap: 16px;
+    }
+
+    /* Detail UI */
+    .detail-list {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        gap: 32px;
+        padding: 32px;
+      }
+    
+      .pic-detail {
+        width: 100%;
+        max-width: 100%;
+        margin: 0;
+        grid-column: 1;
+      }
+    
+      .info-detail {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 20px;
+        grid-column: 2;
+      }
+    
+      .desc-part,
+      .review-resto,
+      label {
+        margin: 0 32px;
+        padding: 16px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }    
+
+}
+
+/* Tablet screen */
+@media screen and (min-width: 900px) {
+    .catalog {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    /* Detail UI */
+    .detail-list {
+        display: grid;
+        grid-template-columns: 2fr 3fr;
+        gap: 32px;
+        padding: 32px;
+        background-color: #f8f8f8;
+        border-radius: 12px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        margin: 32px 0; /* Margin atas dan bawah */
+      }
+    
+      .info-detail {
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        background-color: #fff;
+        padding: 20px;
+        border-radius: 12px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 32px 0; /* Margin atas dan bawah */
+      }
+    
+      .desc-part {
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin: 32px 0; /* Margin atas dan bawah */
+      }
+    
+      .review-resto {
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        margin: 32px 0; /* Margin atas dan bawah */
+      }
+    
+      label {
+        display: block;
+        width: auto;
+        margin: 32px 0; /* Margin atas dan bawah */
+        padding: 10px 15px;
+        background-color: white;
+        border-radius: 10px;
+        border: 1px solid #343f56;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px;
+        color: black;
+        text-align: center;
+        transition: all 0.3s ease;
+      }
+    
+      label:hover {
+        background-color: #f0f0f0;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 6px 12px;
+        transform: scale(1.1);
+      }
+
+}
+
+/* PC Screen */
+@media screen and (min-width:1200px) {
+    .base {
+        max-width: 1200px;
+    }
+
+    /* Detail UI */
+    .info-detail {
+        margin: 24px 0; /* Jarak atas dan bawah untuk kotak judul */
+      }
+    
+      .desc-part {
+        margin: 24px 0; /* Jarak atas dan bawah untuk kotak Description */
+        padding: 16px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+    
+      .review-resto {
+        margin: 24px 0; /* Jarak atas dan bawah untuk bagian review */
+        padding: 16px;
+        background-color: #fff;
+        border: 1px solid #ddd;
+        border-radius: 8px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      }
+    
+      label {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 8px; 
+        padding: 10px 15px 10px 10px; 
+        width: 150px; 
+        height: 50px; 
+        font-size: 12px; 
+        cursor: pointer;
+        user-select: none;
+        border-radius: 8px; 
+        border: 1px solid #343f56;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.2) 0px 4px 8px;
+        margin: 20px 0; 
+        text-align: center;
+        overflow: visible; 
+        white-space: nowrap; 
+        transition: all 0.3s ease;
+      }
+    
+      label:hover {
+        background-color: #f0f0f0;
+        box-shadow: rgba(0, 0, 0, 0.4) 0px 6px 12px;
+        transform: scale(1.05); 
+      }
+    
+      label .action {
+        display: flex;
+        flex-direction: column; 
+        align-items: center;
+      }
+    
+      label .action span {
+        white-space: nowrap; 
+        overflow: hidden; 
+        text-overflow: ellipsis; 
+      }
+
+      input {
+        display: none; /* Tetap sembunyikan input */
+      }
+    
+      .desc-part .btn {
+        display: inline-block;
+        width: auto;
+        padding: 8px 16px;
+        color: #fff;
+        background-color: #ff6f61;
+        border-radius: 6px;
+        text-decoration: none;
+        text-transform: uppercase;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        margin-top: 16px;
+      }
+    
+      .desc-part .btn:hover {
+        background-color: #e14d3d;
+      }
+
+    /* Responsive hero desktop */
+    .hero {
+      background:url('../public/images/heros/hero-image_2.jpg');
+    }      
+}
+
+
+
+
+
+
+
+
